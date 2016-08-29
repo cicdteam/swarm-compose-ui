@@ -8,7 +8,7 @@ import logging
 
 git_repo = os.getenv('GIT_REPO')
 
-logging.basicConfig(level=logging.DEBUG)
+logging.basicConfig(level=logging.INFO)
 
 GIT_YML_PATH = '/opt/docker-compose-projects-git/'
 
