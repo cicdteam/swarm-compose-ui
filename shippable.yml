@@ -15,7 +15,7 @@ build:
 
   ci:
     - npm install -g bower
-    - cd $SHIPPABLE_BUILD_DIR/static
+    - cd $SHIPPABLE_BUILD_DIR/app/static
     - bower  --allow-root --config.interactive=false install
     - cd $SHIPPABLE_BUILD_DIR
 
