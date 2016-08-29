@@ -1,9 +1,7 @@
 web:
   image: dockercloud/quickstart-python:latest
   environment:
-    - SERVICE_NAME=deploy_test
-    - constraint:gpu_node==false
-    - constraint:nodetype!=office
+    - SERVICE_NAME=test
   ports:
     - "80"
   links:
@@ -11,6 +9,3 @@ web:
 
 redis:
   image: redis:latest
-  environment:
-    - constraint:gpu_node==false
-    - constraint:nodetype!=office
