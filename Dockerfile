@@ -11,4 +11,4 @@ RUN apk add --no-cache git \
 
 EXPOSE 5000
 
-ENTRYPOINT ["/env/bin/python", "/app/main.py"]
+ENTRYPOINT ["/usr/local/bin/python", "/app/main.py"]
