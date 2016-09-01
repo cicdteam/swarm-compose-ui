@@ -1,8 +1,9 @@
 FROM python:2.7-alpine
 MAINTAINER Andrew Taranik <me@pureclouds.net>
 
+ENV GIT_REPO https://github.com/pureclouds/swarm-compose-ui-demo-projects.git
+
 ADD app /app
-ADD projects /opt/docker-compose-projects
 WORKDIR /app
 
 RUN apk add --no-cache git \
