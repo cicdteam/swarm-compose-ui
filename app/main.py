@@ -17,7 +17,7 @@ from scripts.requires_auth import requires_auth, authentication_enabled, \
 API_V1 = '/api/v1/'
 YML_PATH = os.getenv('DOCKER_COMPOSE_UI_YML_PATH') \
   or '/opt/docker-compose-projects'
-logging.basicConfig(level=logging.DEBUG)
+logging.basicConfig(level=logging.INFO)
 app = Flask(__name__, static_url_path='')
 
 def load_projects():
