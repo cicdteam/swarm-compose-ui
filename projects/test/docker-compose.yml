@@ -1,11 +1,15 @@
-web:
-  image: dockercloud/quickstart-python:latest
-  environment:
-    - SERVICE_NAME=test
-  ports:
-    - "80"
-  links:
-    - redis
+version: '2'
 
-redis:
-  image: redis:latest
+services:
+  web:
+    image: dockercloud/quickstart-python:latest
+    environment:
+      - SERVICE_NAME=test
+    ports:
+      - "80"
+  redis:
+    image: redis:latest
+
+networks:
+  default:
+    driver: overlay
